@@ -1,9 +1,12 @@
-const node = require("@sveltejs/adapter-node");
+
+import node from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
-module.exports = {
+let config = {
   kit: {
     adapter: node(),
     target: "#svelte",
   },
 };
+
+export default config;
